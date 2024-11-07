@@ -2,28 +2,28 @@
 ## URL - https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/
 ## Trying out for fun.
 
-# Determines shell type
+## Determines shell type
 $ ps
 
 # Displays the current date
 $ date
 
-# Displays the present working directory
+## Displays the present working directory
 $ pwd
 
 # Lists the contents of the current directory
 $ ls
 
-# Prints a string of text, or value of a variable to the terminal
+## Prints a string of text, or value of a variable to the terminal
 $ echo "Hello Bash"
 
 # Finds bash shell path
 $ which bash
 
-# Creates a shell scripts
+## Creates a shell scripts
 $ vi run_all.sh
 
-# Shows Date / Reads Path / Lists files & folders
+## Shows Date / Reads Path / Lists files & folders
 ```
 #!/bin/bash
 echo "Today is " `date`
@@ -35,14 +35,14 @@ echo -e "\n given path has the following files and folders: "
 ls $path
 ```
 
-# Makues bash script executable
+## Makues bash script executable
 chmod u+x fileName.sh
 
-# Variables in bash script
+## Variables in bash script
 $ country=Japan
 $ echo $country
 
-# Takes name and prints through variable
+## Takes name and prints through variable
 ```
 #!/bin/bash
 
@@ -53,7 +53,7 @@ read name
 echo -e "\nWelcome " $name
 ```
 
-# Reads from a file
+## Reads from a file
 ```
 #!/bin/bash
 
@@ -63,14 +63,14 @@ do
 done < input.txt
 ```
 
-# Takes command line arguments
+## Takes command line arguments
 ```
 #!/bin/bash
 
 echo "Hello, $1!"
 ```
 
-# If / Else / If-Else-If
+## If / Else / If-Else-If
 ```
 #!/bin/bash
 
@@ -86,7 +86,7 @@ else
 fi
 ```
 
-# Loops through while condition
+## Loops through while condition
 ```
 #!/bin/bash
 
@@ -98,7 +98,7 @@ while [[ $i -le 10 ]]; do
 done
 ```
 
-# Loops through for condition
+## Loops through for condition
 ```
 #!/bin/bash
 
@@ -108,7 +108,7 @@ do
 done
 ```
 
-# Case statement
+## Case statement
 ```
 #!/bin/bash
 
@@ -126,13 +126,13 @@ case $fruit in
 esac
 ```
 
-# Runs cron
+## Runs cron
 ```
 #!/bin/bash
 * * * * * sh /path/to/script.sh
 ```
 
-# Sets debug
+## Sets debug
 ```
 #!/bin/bash
 
@@ -143,5 +143,5 @@ if [ $? -ne 0 ]; then
 fi
 ```
 
-# Cron logs
+## Cron logs
 $ /var/log/syslog
